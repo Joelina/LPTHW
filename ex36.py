@@ -50,7 +50,7 @@ def first_right():
             \"Thank you, finally someone who thinks that way. Because you were nice to me,
             I'll be nice to you. If you want to get past the guard you need to bribe him!
             There's supposed to be a treasure in a hidden room behind this bookshelf.
-            You just have to take out \'The Tales of Beedlethe Bard\'\".
+            You just have to take out \'The Tales of Beedle the Bard\'\".
             """
             print "You take out the book and the bookshelf reveals a hidden room."
             print "There are two levers in the room, one to the left and one to the right. Which one do you pull?"
