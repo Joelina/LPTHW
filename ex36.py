@@ -47,10 +47,10 @@ def first_right():
             pick_answer = True
             print "The ghost smiles and says:"
             print """
-            Thank you, finally someone who thinks that way. Because you were nice to me,
+            \"Thank you, finally someone who thinks that way. Because you were nice to me,
             I'll be nice to you. If you want to get past the guard you need to bribe him!
             There's supposed to be a treasure in a hidden room behind this bookshelf.
-            You just have to take out \'The Tales of Beedlethe Bard\'.
+            You just have to take out \'The Tales of Beedlethe Bard\'\".
             """
             print "You take out the book and the bookshelf reveals a hidden room."
             print "There are two levers in the room, one to the left and one to the right. Which one do you pull?"
@@ -121,7 +121,7 @@ def second_right():
 def guard_talk():
     print "You go talk to the guard. After you mention your request to leave he says:"
     print "\"Sorry, I'm ordered to not let anybody out. It's my job. But I could be persuaded.\""
-    print "How many gold coins will you give me?"
+    print "\"How many gold coins will you give me?\""
 
     choice = raw_input("> ")
 
@@ -178,15 +178,15 @@ def start():
 
     choice = raw_input("> ")
 
-    if "1" in choice or "first" and "left" in choice:
+    if "first" and "left" in choice or choice == "1":
         first_left()
-    elif "2" in choice or "second" and "left" in choice:
+    elif "second" and "left" in choice or choice == "2":
         second_left()
-    elif "3" in choice or "first" and "right" in choice:
+    elif "first" and "right" in choice or choice == "3":
         first_right()
-    elif "4" in choice or "second" and "right" in choice:
+    elif "second" and "right" in choice or choice == "4":
         second_right()
-    elif "5" in choice or "talk" and "guard" in choice:
+    elif "talk" and "guard" in choice or choice == "5":
         guard_talk()
     else:
         dead("You don't want to leave? Well, no adventure for you then.")
