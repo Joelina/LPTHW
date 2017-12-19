@@ -48,10 +48,14 @@ class CentralCorridor(Scene):
         print "of the corridor, a dark gruesome looking demon with yellow eyes appears"
         print "in front of you. You skid to a halt as he is about to blast a spell at you."
         print "What do you do?"
+        print "1. fight"
+        print "2. dodge"
+        print "3. tell a joke"
+        print "4. flee"
 
         action = raw_input("> ")
 
-        if action == "dodge":
+        if action == "dodge" or action == "2":
             print "\nWith your super quick reflexes you dodge his spell doing awesome"
             print "rolls, jumps and somersaults. Sadly you're a bit clumsy."
             print "While doing a graceful pirouette you slip and fall on your cute bottom."
@@ -61,7 +65,7 @@ class CentralCorridor(Scene):
             print "You check if any other demon's around and then hurry through the door."
             return 'big_hall'
 
-        elif action == "fight":
+        elif action == "fight" or action == "1":
             print "\nYou take out your super awesome magical sword and get ready to fight."
             print "The demon attacks you with a blasting spell and you quickly deflect it"
             print "with your sword. Then you attack. Fiercefully you run towards the demon,"
@@ -70,7 +74,7 @@ class CentralCorridor(Scene):
             print "against this demon as he grabs your neck and absorbs your soul."
             return 'death'
 
-        elif action == "flee":
+        elif action == "flee" or action == "4":
             print "\nReally, you want to flee?"
             print "You want to just leave your best friend to die?"
             print "Coward!"
@@ -78,7 +82,7 @@ class CentralCorridor(Scene):
             print "That's what you get."
             return 'death'
 
-        elif action == "tell a joke":
+        elif action == "tell a joke" or action == "3":
             print "\nYou recognize the demon from a book you've recently read."
             print "You remember it saying that this demon can be defeated if you make it laugh."
             print "You tell the only joke you can remember:"
@@ -100,10 +104,13 @@ class BigHall(Scene):
         print "and look even worse than the one before. You see that the biggest demon"
         print "has a key around his neck. the door to the tower is on the other side of the hall."
         print "What do you do?"
+        print "1. fight"
+        print "2. tell a joke"
+        print "3. use stealth"
 
         action = raw_input("> ")
 
-        if action == "tell a joke":
+        if action == "tell a joke" or action == "2":
             print "\nAs they look similar to the demon you just met you try defeating them"
             print "with your joke. After you told the joke, the demons look even angrier than"
             print "before and all come at you at once."
@@ -112,7 +119,7 @@ class BigHall(Scene):
             print "Sadly you remembered that too late."
             return 'death'
 
-        elif action == "fight":
+        elif action == "fight" or action == "1":
             print "\nYou get ready to fight and draw your magical sword."
             print "You attack the nearest demon and a marvellous fight commences."
             print "You manage to kill two demons before you start to get tired."
@@ -124,7 +131,7 @@ class BigHall(Scene):
             print "You were so close."
             return 'death'
 
-        elif "stealth" in action or "stealthy" in action:
+        elif action == "use stealth" or action == "3":
             print "\nYou remember from your book, that red eyed demons can't really see"
             print "but rather find their targets through sound waves."
             print "That also explains why they haven't done anything yet."
@@ -217,10 +224,13 @@ class DragonsDen(Scene):
         print "an enormous silvery blue dragon standing right in front of you."
         print "He looks directly at the two of you."
         print "What do you do?"
+        print "1. fight"
+        print "2. flee"
+        print "3. give food"
 
         action = raw_input("> ")
 
-        if action == "give food":
+        if action == "give food" or action == "3":
             print "\nYou remember that you have some fruit in your pocket. You take it"
             print "out and hold it in front of the dragon."
             print "The dragon starts wagging its tail."
@@ -244,6 +254,7 @@ class Finished(Scene):
 
     def enter(self):
         print "\nYou did it! Well done!"
+        print "Your best friend is proud of you!"
         print "Thank you for playing!"
         return 'finished'
 
