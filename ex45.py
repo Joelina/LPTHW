@@ -25,7 +25,7 @@ class Engine(object):
 class Death(Scene):
 
     quips = [
-        "You died. That's too bad.",
+        "You died and you suck. That's too bad.",
         "What will your best friend think of you?",
         "I hope you feel guilty and try again.",
         "Don't let your best friend down like this."
@@ -248,7 +248,7 @@ class DragonsDen(Scene):
             print "\nYou %r. That was a bad choice." % action
             print "The dragon lets out an angry howl and then torches the two of you"
             print "with a fireball."
-            print 'death'
+            return 'death'
 
 class Finished(Scene):
 
