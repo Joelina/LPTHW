@@ -1,0 +1,113 @@
+(dp0
+Vsup
+p1
+ccopy_reg
+_reconstructor
+p2
+(cmap
+Scene
+p3
+c__builtin__
+object
+p4
+Ntp5
+Rp6
+(dp7
+S'urlname'
+p8
+S'next_question'
+p9
+sS'paths'
+p10
+(dp11
+S'1'
+p12
+g2
+(g3
+g4
+Ntp13
+Rp14
+(dp15
+g8
+S'death'
+p16
+sg10
+(dp17
+sS'description'
+p18
+S"\nYou take a bottle at random, open it and try to smell what its content could be.\nYou don't seem to smell anything. Before pouring it into your best friends' mouth\nyou decide to try it yourself. You take a sip and immediately collapse onto the floor.\nYou chose the poison.\n"
+p19
+sS'title'
+p20
+S'Game over'
+p21
+sbsS'3'
+p22
+g14
+sS'2'
+p23
+g2
+(g3
+g4
+Ntp24
+Rp25
+(dp26
+g8
+S'dragons_den'
+p27
+sg10
+(dp28
+S'give food'
+p29
+g2
+(g3
+g4
+Ntp30
+Rp31
+(dp32
+g8
+S'the_end_winner'
+p33
+sg10
+(dp34
+sg18
+S'\nYou remember that you have some fruit in your pocket. You take it out and hold it\nin front of the dragon. The dragon starts wagging its tail. You say: "Who\'s a good dragon?"\nand the dragons\' tail wags even more. You say: "Sit!" and the dragon sits. You carefully\nplace the fruit in front of the dragon and say: "Wait!" The dragon howls a little.\nYou say: "And go." The dragon happily eats the fruit. You go pet the dragon and see that\nthere\'s a big double door behind it. You open it and find that it leads to the top of a cliff.\nYour best friend says: "Let\'s take the dragon to get out!" You look at them like their crazy\njust to realize that there\'s no other option. You two climb onto the dragon and flee from this evil place.\n'
+p35
+sg20
+S'You made it!'
+p36
+sbsS'flee'
+p37
+g2
+(g3
+g4
+Ntp38
+Rp39
+(dp40
+g8
+S'the_end_loser'
+p41
+sg10
+(dp42
+sg18
+S'\nSadly you are not quick enough. The dragon lets out an angry howl\nand then torches the two of you with a fireball.\n'
+p43
+sg20
+S'So close'
+p44
+sbsS'fight'
+p45
+g39
+ssg18
+S'\nYou take bottle 2 and open it. You try to smell what it is but are left\nabsolutey clueless. Before pouring it into your best friends\' mouth you\ntry it yourself. You take a sip but nothing happens. Carefully you give\na little to your best friend. Their eyes open. You did it!\nThey say: "Where are we, what\'s going on?"\nYou just say that there\'s no time to explain and that you\'ll have to get\nthe hell out of there. You help them up and together you leave the tower.\n\nYou run down the stairs of the tower and back into the big hall.\nYou nearly forgot about the demons and quickly rush through the next best door.\nYou find yourselves in a very odd looking room. It seems to be more of a cave,\nbut at the same time also looks like a stable of some sort. You sneak further\ninto the room and look around a corner just to see an enormous silvery blue dragon\nstanding right in front of you.\n'
+p46
+sg20
+S'Dragons Den'
+p47
+sbssg18
+S'\n\nThe face smiles and says:\n"Very well done, now go on ahead\nOr stay were you are until you are dead."\nThe face transforms back into the lock. You put the key in and turn it.\n\nThe door opens. You can see your best friend lying on the floor,\napparently unconscious. There are three bottles and a piece of paper on\nthe desk next to them. The paper reads:\nTo save your friend you simply must choose\nThe bottle that wakes him, which won\'t be the booze.\nPlease beware of the poison as well\nOr you\'ll send your friend straight into hell.\n'
+p48
+sg20
+S'Next Question'
+p49
+sbs.

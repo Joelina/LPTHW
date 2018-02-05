@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block bodycontent %}
+
+{% if scene %}
+  <h1> {{ scene.title }} </h1>
+  <pre>{{ scene.description }} </pre>
+  {% if scene.urlname == "death" or scene.urlname == "the_end_winner" or scene.urlname == "the_end_loser" %}
+    <p><a href="/">Play Again?</a></p>
+  {% else %}
+    <p>
+      <form action="/game" method="POST">
+        {% if scene.urlname == "the_tower" %}
+          What is your answer? <input type="text" name="userinput"></input>
+        {% else %}
+          What do you do?
+          <select name="userinput">
+             {% for entry in paths %}
+             <option value="{{ entry }}">{{ entry }}</option>
+             {% endfor %}
+           </select>
+        {% endif %}
+        <input type="submit"></input>
+      </form>
+      {% if message %}
+        <p>{{ message }}</p>
+      {% endif %}
+    </p>
+  {% endif %}
+{% else %}
+  <p><a href="/">Start at the Beginning</a></p>
+{% endif %}
+<a href="/save"><input type="button" value="Save"></input></a>
+<a href="/load"><input type="button" value="Load"></input></a>
+<a href="/logout"><input type="button" value="Logout"></input></a>
+{% endblock %}

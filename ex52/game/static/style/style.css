@@ -1,0 +1,40 @@
+@font-face {
+  font-family: "Gabriola";
+  src: url("font/Gabriola.ttf");
+}
+
+html, pre {
+  background: #9ccbf4;
+  color: black;
+  font-family: Gabriola, serif;
+  font-size: 20px;
+  text-align: left;
+  max-width: 1200px;
+  margin: auto;
+}
+
+a {
+  color: black;
+}
+
+select, input[type=text] {
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+  padding: 5px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+input[type=submit], input[type=button] {
+  font-family: "Times New Roman", serif;
+  font-size: 16px;
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  margin: 8px 0;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+}

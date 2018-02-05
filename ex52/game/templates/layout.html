@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <title>The Dark Wizard</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='style/style.css') }}">
+    <style>
+      h1 {
+        color: red;
+      }
+    </style>
+  </head>
+<body>
+  <img src="{{url_for('static',filename='img/castle.svg')}}" width="640px" align="right"/>
+  {% block bodycontent %}
+  <p>Empty Layout</p>
+  {% endblock %}
+</body>
+</html>

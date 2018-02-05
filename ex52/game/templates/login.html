@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block bodycontent %}
+
+<p>
+  <form action="/login" method="POST">
+  Your username:
+  <input type="text" name="username"><br/>
+  Your password:
+  <input type="text" name="password"><br/>
+  <br/>
+  <input type="SUBMIT" value="Sign in">
+  or
+  <a href="/register"><input type="button" value="Sign up"></input></a>
+  here if you're not registered yet.
+</form>
+</p>
+
+{% endblock %}

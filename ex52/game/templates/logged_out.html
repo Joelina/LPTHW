@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+{% block bodycontent %}
+
+<p>
+  You were successfully logged out!<br/>
+  <form action="/login" method="POST">
+  Your username:
+  <input type="text" name="username"><br/>
+  Your password:
+  <input type="text" name="password"><br/>
+  <br/>
+  <input type="SUBMIT" value="Sign in">
+</form>
+</p>
+
+{% endblock %}
